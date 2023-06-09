@@ -1,0 +1,105 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(3, 34, 3);
+  color: white;
+  transition: 0.8s all ease;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  &.active {
+    background-color: white;
+    color: black;
+  }
+
+  .container {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+
+      .text {
+      }
+      .dot {
+        color: rgb(10, 233, 10);
+      }
+    }
+    .links {
+      display: flex;
+      gap: 35px;
+      align-items: center;
+      font-weight: 700px;
+      font-family: "montserrat", sans-serif;
+
+      .sellerUser {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        cursor: pointer;
+        position: relative;
+
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          object-fit: cover;
+        }
+
+        .options {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          padding: 20px;
+          background-color: white;
+          border-radius: 10px;
+          z-index: 999;
+          border: 1px solid lightgray;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          color: gray;
+          width: 150px;
+          font-weight: 20px;
+        }
+      }
+
+      button {
+        color: white;
+        padding: 10px, 20px;
+        border-radius: 1px, white solid;
+        cursor: pointer;
+        background-color: transparent;
+
+        &:hover {
+          background-color: #1dbf71;
+          border-color: #1dbf73;
+        }
+      }
+    }
+  }
+
+  hr {
+    width: calc(100% - 2px);
+    height: 0;
+    border-top: 0.5px solid #ebe9e9;
+    border-bottom: 0.5px solid #ebe9e9;
+  }
+
+  .menu {
+    width: 1000px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 300px;
+    color: gray;
+    font-family: sans-serif;
+  }
+}
