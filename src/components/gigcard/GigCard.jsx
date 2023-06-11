@@ -5,7 +5,7 @@ import { AiFillHeart, AiFillStar } from "react-icons/ai";
 
 const GigCard = ({ item }) => {
   return (
-    <Link>
+    <Link className="link">
       <div className="gigCard">
         <img src={item.img} alt="" />
         <div className="info">
@@ -20,7 +20,7 @@ const GigCard = ({ item }) => {
           </div>
         </div>
         <hr />
-        <div className="detals">
+        <div className="details">
           <AiFillHeart className="img" />
           <div className="price">
             <span>START AT</span>

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./categories.scss";
-import { AiOutlineArrowDown } from "react-icons/ai";
+import { AiOutlineDown } from "react-icons/ai";
+import GigCard from "../../components/gigcard/GigCard";
+import { gigs } from "../../data";
 
 const Categories = () => {
   const [sort, setSort] = useState("sales");
@@ -31,7 +33,7 @@ const Categories = () => {
             <span className="sortType">
               {sort === "sales" ? "Best Selling" : "Newest"}
             </span>
-            <AiOutlineArrowDown
+            <AiOutlineDown
               className="img"
               size={20}
               onClick={() => setOpen(!open)}
@@ -46,6 +48,11 @@ const Categories = () => {
               </div>
             )}
           </div>
+        </div>
+        <div className="cards">
+          {gigs.map((gig) => (
+            <GigCard key={gig.id} item={gig} />
+          ))}
         </div>
       </div>
     </div>

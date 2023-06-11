@@ -78,7 +78,7 @@
           padding: 20px;
           background-color: white;
           border-radius: 5px;
-          border: 5px solid lightgrey;
+          border: 1px solid lightgrey;
           position: absolute;
           top: 30px;
           right: 0;
@@ -92,6 +92,13 @@
           }
         }
       }
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 15px;
     }
   }
 }
