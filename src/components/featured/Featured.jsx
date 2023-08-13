@@ -13,7 +13,6 @@ const Featured = () => {
           </h1>
           <div className="search">
             <div className="searchInput">
-              {/* <img src="" alt="" /> */}
               <BiSearchAlt2 className="icon" />
               <input type="text" placeholder="Try building mobile app" />
             </div>

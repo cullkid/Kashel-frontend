@@ -54,6 +54,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <Slide slidesToShow={3} arrowsScroll={4} autoplay={false}>
         {projects.map((card) => (
           <ProjectCard item={card} key={card.id} />
