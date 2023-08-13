@@ -1,8 +1,8 @@
 import React from "react";
-import "./projectCard.scss";
+import "./productCard.scss";
 import { Link } from "react-router-dom";
 
-const ProjectCard = ({ item }) => {
+const ProductCard = ({ item }) => {
   return (
     <Link className="link">
       <div className="projectCard">
@@ -19,4 +19,4 @@ const ProjectCard = ({ item }) => {
   );
 };
 
-export default ProjectCard;
+export default ProductCard;

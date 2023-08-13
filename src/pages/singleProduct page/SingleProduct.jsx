@@ -1,5 +1,5 @@
 import React from "react";
-import "./singleCategory.scss";
+import "./singleProduct.scss";
 import { AiFillStar } from "react-icons/ai";
 import { Slider } from "infinite-react-carousel";
 import { FaRegThumbsDown, FaRegThumbsUp } from "react-icons/fa";
@@ -7,7 +7,7 @@ import { BiTimeFive } from "react-icons/bi";
 import { FaRecycle } from "react-icons/fa";
 import { AiOutlineCheck } from "react-icons/ai";
 
-const SingleCategory = () => {
+const SingleProduct = () => {
   return (
     <div className="singleCat">
       <div className="container">
@@ -85,7 +85,7 @@ const SingleCategory = () => {
                   <span className="desc">USA</span>
                 </div>
                 <div className="item">
-                  <span className="title">Member sincr</span>
+                  <span className="title">Member since</span>
                   <span className="desc">March 2020</span>
                 </div>
                 <div className="item">
@@ -296,4 +296,4 @@ const SingleCategory = () => {
   );
 };
 
-export default SingleCategory;
+export default SingleProduct;

@@ -4,9 +4,9 @@ import Featured from "../../components/featured/Featured";
 import TrustedBy from "../../components/trustedby/TrustedBy";
 import Slide from "../../components/slide/Slide";
 import { cards, projects } from "../../data";
-import GitCard from "../../components/gitCard/GitCard";
 import { RiCheckboxCircleLine } from "react-icons/ri";
-import ProjectCard from "../../components/projectCard/ProjectCard";
+import ProductCard from "../../components/productCard/ProductCard";
+import CategoryCard from "../../components/categoryCard/CategoryCard";
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       <TrustedBy />
       <Slide slidesToShow={4} arrowsScroll={4} autoplay={false}>
         {cards.map((card) => (
-          <GitCard item={card} key={card.id} />
+          <CategoryCard item={card} key={card.id} />
         ))}
       </Slide>
 
@@ -57,7 +57,7 @@ const Home = () => {
 
       <Slide slidesToShow={3} arrowsScroll={4} autoplay={false}>
         {projects.map((card) => (
-          <ProjectCard item={card} key={card.id} />
+          <ProductCard item={card} key={card.id} />
         ))}
       </Slide>
     </div>

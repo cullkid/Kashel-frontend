@@ -2,13 +2,13 @@ import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Home from "./pages/home page/Home";
-import Categories from "./pages/categories page/Categories";
-import SingleCategory from "./pages/singleCategory page/SingleCategory";
+import SingleProduct from "./pages/singleProduct page/SingleProduct";
 import Order from "./pages/orders page/Order";
-import MyCategory from "./pages/myCategory page/MyCategory";
-import AddCategory from "./pages/addCategory page/AddCategory";
+import MyProduct from "./pages/myProduct page/MyProduct";
+import AddProduct from "./pages/addProduct page/AddProduct";
 import Massege from "./pages/message page/Message";
 import SingleMessage from "./pages/singleMessage page/SingleMessage";
+import Product from "./pages/product page/Produt";
 
 function App() {
   const Layout = () => {
@@ -31,24 +31,24 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/category",
-          element: <Categories />,
+          path: "/product",
+          element: <Product />,
         },
         {
-          path: "/category/:id",
-          element: <SingleCategory />,
+          path: "/product/:id",
+          element: <SingleProduct />,
         },
         {
           path: "/order",
           element: <Order />,
         },
         {
-          path: "/mycategory",
-          element: <MyCategory />,
+          path: "/myproduct",
+          element: <MyProduct />,
         },
         {
-          path: "/addcategory",
-          element: <AddCategory />,
+          path: "/addproduct",
+          element: <AddProduct />,
         },
         {
           path: "/message",

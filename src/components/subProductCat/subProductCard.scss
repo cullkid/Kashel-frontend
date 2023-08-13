@@ -13,7 +13,7 @@
   .info {
     padding: 10px 20px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 15px;
 
     .user {
@@ -28,10 +28,15 @@
       }
     }
 
+    .desc {
+      font-size: 12px;
+    }
+
     .star {
       display: flex;
       align-items: center;
       gap: 5px;
+      color: #ffc108;
 
       img {
         width: 14px;
@@ -59,11 +64,12 @@
 
     .img {
       cursor: pointer;
+      color: rgb(29, 28, 28);
     }
 
     .price {
       span {
-        color: #999;
+        color: #666666c2;
         font-size: 12px;
       }
 

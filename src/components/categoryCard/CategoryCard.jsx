@@ -1,10 +1,10 @@
 import React from "react";
-import "./gitCard.scss";
+import "./categoryCard.scss";
 import { Link } from "react-router-dom";
 
-const GitCard = ({ item }) => {
+const CategoryCard = ({ item }) => {
   return (
-    <Link>
+    <Link to="/product/123">
       <div className="gitCard">
         <img src={item.img} alt="" />
         <span className="desc">{item.desc}</span>
@@ -14,4 +14,4 @@ const GitCard = ({ item }) => {
   );
 };
 
-export default GitCard;
+export default CategoryCard;

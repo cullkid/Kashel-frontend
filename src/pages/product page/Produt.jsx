@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./categories.scss";
 import { AiOutlineDown } from "react-icons/ai";
-import GigCard from "../../components/gigcard/GigCard";
 import { gigs } from "../../data";
+import SubProductCard from "../../components/subProductCat/SubProductCard";
 
-const Categories = () => {
+const Product = () => {
   const [sort, setSort] = useState("sales");
   const [open, setOpen] = useState(false);
 
@@ -24,8 +24,8 @@ const Categories = () => {
         <div className="menu">
           <div className="left">
             <span>Budged</span>
-            <input type="text" placeholder="min" />
-            <input type="text" placeholder="max" />
+            <input type="number" placeholder="min" />
+            <input type="number" placeholder="max" />
             <button>Apply</button>
           </div>
           <div className="right">
@@ -51,7 +51,7 @@ const Categories = () => {
         </div>
         <div className="cards">
           {gigs.map((gig) => (
-            <GigCard key={gig.id} item={gig} />
+            <SubProductCard key={gig.id} item={gig} />
           ))}
         </div>
       </div>
@@ -59,4 +59,4 @@ const Categories = () => {
   );
 };
 
-export default Categories;
+export default Product;
